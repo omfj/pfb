@@ -1,0 +1,17 @@
+{
+  "name": "playwright-frontend-backend",
+  "version": "1.0.0",
+  "packageManager": "pnpm@8.7.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "playwright test",
+    "test:install": "playwright install --with-deps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^20.11.17",
+    "playwright": "^1.47.2",
+    "turbo": "^2.1.2"
+  }
+}

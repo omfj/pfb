@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "start": "turbo run start",
     "test": "playwright test",
     "test:install": "playwright install --with-deps"
   },

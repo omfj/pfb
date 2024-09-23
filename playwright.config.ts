@@ -18,13 +18,13 @@ export default defineConfig({
 
   webServer: [
     {
-      command: "pnpm run dev",
+      command: "pnpm run start",
       cwd: "./apps/www",
       port: 3000,
       reuseExistingServer: !isCI,
     },
     {
-      command: "pnpm run dev",
+      command: "pnpm run start",
       cwd: "./apps/api",
       port: 8000,
       reuseExistingServer: !isCI,

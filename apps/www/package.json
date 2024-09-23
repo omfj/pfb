@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "pnpm with-env next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "pnpm with-env next build",
+    "start": "pnpm with-env next start",
     "with-env": "pnpm dotenv -e ../../.env --"
   },
   "dependencies": {

@@ -5,6 +5,13 @@
     "dev": {
       "persistent": true,
       "cache": false
+    },
+    "build": {
+      "persistent": false,
+      "outputs": ["dist/**", ".next/**"]
+    },
+    "start": {
+      "persistent": true
     }
   }
 }

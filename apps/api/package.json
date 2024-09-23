@@ -1,7 +1,10 @@
 {
   "name": "api",
+  "type": "module",
   "scripts": {
     "dev": "pnpm with-env tsx watch src/index.ts",
+    "build": "tsup",
+    "start": "pnpm with-env node dist/index.cjs",
     "with-env": "pnpm dotenv -e ../../.env --"
   },
   "dependencies": {
@@ -11,6 +14,7 @@
   "devDependencies": {
     "@types/node": "^20.11.17",
     "dotenv-cli": "^7.4.2",
+    "tsup": "^8.3.0",
     "tsx": "^4.7.1"
   }
 }

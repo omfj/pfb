@@ -12,10 +12,15 @@ app.get("/", (c) => {
   return c.text("Hello, World!");
 });
 
-const port = 8000;
-console.log(`Server is running on port ${port}`);
+const PORT = Number(process.env.API_PORT);
+
+if (!PORT) {
+  throw new Error("PORT is not defined");
+}
+
+console.log(`Server is running on port ${PORT}`);
 
 serve({
   fetch: app.fetch,
-  port,
+  port: PORT,
 });

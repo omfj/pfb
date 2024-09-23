@@ -12,6 +12,10 @@ jobs:
   ci:
     runs-on: ubuntu-latest
 
+    env:
+      API_PORT: 8000
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+
     steps:
       - name: 🔍 Checkout
         uses: actions/checkout@v4

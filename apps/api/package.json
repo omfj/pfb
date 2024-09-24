@@ -1,10 +1,9 @@
 {
   "name": "api",
-  "type": "module",
   "scripts": {
     "dev": "pnpm with-env tsx watch src/index.ts",
-    "build": "tsup",
-    "start": "pnpm with-env node dist/index.cjs",
+    "build": "pnpm with-env esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "start": "pnpm with-env node dist/index.js",
     "with-env": "pnpm dotenv -e ../../.env --"
   },
   "dependencies": {

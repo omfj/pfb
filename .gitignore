@@ -2,3 +2,5 @@ node_modules/
 .turbo/
 playwright-report/
 test-results/
+.env*
+!.env.example
